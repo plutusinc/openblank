@@ -93,7 +93,7 @@ error_reporting( E_ALL | E_NOTICE );
 include 'PHPDocx_0.9.2.php';
 $w = new WordDocument( "Statement.docx" );
 $docx_url="http://185.76.145.188/Statement.docx";
-$w->assign('В '.$_POST["area"] 'районный суд г.'.$_POST["city"]);
+$w->assign('В '.$_POST["area"] .'районный суд г.'.$_POST["city"]);
 $w->assign('От ' .$_POST["name"]);
 $w->assign('зарегистрированного по адресу: ');
 $w->assign($_POST["city"] .' '.$_POST["street"] .' '.$_POST["house"]);
