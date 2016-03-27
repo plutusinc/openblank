@@ -49,7 +49,7 @@ error_reporting(E_ALL);
 ?>
 </i>
 </b>
-<b> , укажите состав административного правонарушения</b>
+<b>  укажите состав административного правонарушения</b>
 </p>
 <p>
 <input checked="checked" name="answer" value="a1" type="radio">
