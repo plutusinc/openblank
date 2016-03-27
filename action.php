@@ -52,14 +52,37 @@ error_reporting(E_ALL);
 <b>Укажите ваши данные</b>
 </p>
  <div class="row l_name">
- <label>ФИО:</label>
-<input type="text" name="name" pattern="^[А-Яа-яЁё\s]+$" required  size="30"  placeholder="Введите фамилию имя и отчество"/>
+ <label>От:</label>
+<input type="text" name="name" pattern="^[А-Яа-яЁё\s]+$" required  size="30"  placeholder="Иванова Петра Ивановича"/>
 </div>
-<br>
+
  <div class="row l_name">
-<label>Адрес по прописке:</label>
-<input type="text" name="address"  required  size="40"  placeholder="Республика Бурятия Улан-Удэ"/></p>
+<label>Город:</label>
+<input type="text" name="city"  required  size="20"  value="Улан-Удэ" placeholder="Улан-Удэ"/>
 </div>
+
+
+<div class="row l_name">
+<label>Район:</label>
+<select name="area" required>
+<option value="Советский">Советский</option>
+<option value="Октябрьский">Октябрьский</option>
+<option value="Железнодорожный">Железнодорожный</option>
+</select>
+<br>
+</div>
+
+<div class="row l_name">
+<label>Улица:</label>
+<input type="text" name="street"  required  size="20"  placeholder="Улица"/>
+</div>
+
+
+<div class="row l_name">
+<label>Ваш дом:</label>
+<input type="text" name="house"  required  size="20"  placeholder="Дом кв"/>
+</div>
+
 <p>
 <input type="submit" value="Ваше Заявление">
 </p>
