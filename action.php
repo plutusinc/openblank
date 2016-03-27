@@ -49,21 +49,17 @@ error_reporting(E_ALL);
 ?>
 </i>
 </b>
-<b>  укажите состав административного правонарушения</b>
+<b>Укажите ваши данные</b>
 </p>
-<p>
-<input checked="checked" name="answer" value="a1" type="radio">
-Статья 12.9 КоАП РФ Превышение установленной скорости движения
+ <div class="row l_name">
+ <label>ФИО:</label>
+<input type="text" name="name" pattern="^[А-Яа-яЁё\s]+$" required  size="30"  placeholder="Введите фамилию имя и отчество"/>
+</div>
 <br>
-<input  name="answer" value="a2" type="radio">
-Статья 
-12.8 КоАП РФ Управление транспортным средством водителем, находящимся в 
-состоянии опьянения, передача управления транспортным средством лицу, 
-находящемуся в состоянии опьянения
-<br>
-<input name="answer" value="a3" type="radio">
-Статья 12.18 КоАП РФ Непредоставление преимущества в движении пешеходам или иным участникам дорожного движения
-</p>
+ <div class="row l_name">
+<label>Адрес по прописке:</label>
+<input type="text" name="address"  required  size="40"  placeholder="Республика Бурятия Улан-Удэ"/></p>
+</div>
 <p>
 <input type="submit" value="Ваше Заявление">
 </p>
