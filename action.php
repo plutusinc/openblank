@@ -43,7 +43,7 @@
 <b>
 <i>
 <?php
-echo htmlspecialchars($_POST['name']);
+echo htmlspecialchars($_POST['answer']);
 ini_set('display_errors',1);
 error_reporting(E_ALL);
 ?>
@@ -93,10 +93,10 @@ error_reporting( E_ALL | E_NOTICE );
 include 'PHPDocx_0.9.2.php';
 $w = new WordDocument( "Statement.docx" );
 $docx_url="http://185.76.145.188/Statement.docx";
-$w->assign('В Октябрьский районный суд г. Улан-Удэ');
+$w->assign('В '.$_POST["area"] 'районный суд г.'.$_POST["city"]);
 $w->assign('От ' .$_POST["name"]);
 $w->assign('зарегистрированного по адресу: ');
-$w->assign($_POST["address"]);
+$w->assign($_POST["city"] .' '.$_POST["street"] .' '.$_POST["house"]);
 $w->assign('ЖАЛОБА');
 $w->assign('на постановление по делу об административном правонарушении');
 $w->assign('Постановлением инспектора ДПС ГИБДД __________ от «___» ________ ____ года на меня было наложено административное взыскание в виде штрафа в размере ___ руб. за совершение административного правонарушения, предусмотренного ч. __ ст. _____ Кодекса об административных правонарушениях.
