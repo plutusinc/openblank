@@ -40,32 +40,29 @@
 <div class="order_form2">
 <form action="/get.php" method="POST" >
 <p>
-<b>
-<i>
+
+
 <?php
-echo htmlspecialchars($_POST['answer']);
-ini_set('display_errors',1);
-error_reporting(E_ALL);
+
 ?>
-</i>
-</b>
+
 <br>
 <b>Укажите ваши данные</b>
 </p>
-
+<br>
  <label>От:</label>
-<input type="text" name="name" pattern="^[А-Яа-яЁё\s]+$" required  size="30"  placeholder="Иванова Петра Ивановича"  value=""/>
+<input class="right-input"  type="text" name="name" pattern="^[А-Яа-яЁё\s]+$" required  size="30"  placeholder="Иванова Петра Ивановича"  value=""/>
 <br>
 
 
 <label>Город:</label>
-<input type="text" name="city"  required  size="20"  value="Улан-Удэ" placeholder="Улан-Удэ"/>
+<input class="right-input"  type="text" name="city"  required  size="20"  value="Улан-Удэ" placeholder="Улан-Удэ"/>
 <br>
 
 
 
 <label>Район:</label>
-<select name="area" required>
+<select class="right-input"  name="area" required>
 <option value="Советский">Советский</option>
 <option value="Октябрьский">Октябрьский</option>
 <option value="Железнодорожный">Железнодорожный</option>
@@ -75,16 +72,24 @@ error_reporting(E_ALL);
 
 
 <label>Улица:</label>
-<input type="text" name="street"  required  size="20"  placeholder="Московская" value=""/>
+<input class="right-input" type="text" name="street"  required  size="20"  placeholder="Московская" value=""/>
 
 <br>
 
 <label>Дом квартира:</label>
-<input type="text" name="house"  required  size="20"  placeholder="Дом кв" value=""/>
+<input class="right-input"  type="text" name="house"  required  size="20"  placeholder="Дом кв" value=""/>
 <br>
 
+
 <p>
-<input type="submit" value="Ваше Заявление">
+<br>
+<label>Ваше заявление:</label>
+</p>
+
+
+<input class="left-input"  type="submit" value="На Русском" >
+
+<input class="right-input"  type="submit" value="На Бурятском" >
 </p>
 </form>
 
@@ -100,7 +105,11 @@ error_reporting(E_ALL);
         <div class="footer">
          
           <div class="info">
-            <div class="tel">+7 914 <span>055-88-23</span></div>
+            <div class="tel">
+            <span>+7 950-1190-222</span>
+            <br>
+            <span>+7 902-4567-234</span>
+            </div>
             <div class="adr">Республика Бурятия г.Улан-Удэ ул.Ленина д.54</div>
         
           </div>

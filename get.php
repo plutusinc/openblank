@@ -81,6 +81,7 @@ $w->create();
 <p>
 <h1>Скачать</h1>
 <a href="/Statement.docx"><b>Заявление</b></a>
+<a href="/Statementbur.docx"><b>Заявление на бурятском</b></a>
 </p>
 
 
