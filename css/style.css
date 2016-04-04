@@ -2,6 +2,20 @@
 			fonts
 
 \* ----------------------------------- */
+
+.left-input
+{
+float:left;
+}
+
+
+.right-input
+{
+float:right;
+}
+
+
+
 .order_form2{
 width:400px;
 overflow:hidden;
@@ -231,8 +245,6 @@ body h2 {
   margin: 0;
 }
 body ul {
-  padding: 0;
-  margin: 0;
   list-style-type: none;
 }
 body a {
@@ -594,8 +606,8 @@ ul.box_list li .block p {
   padding-left: 27px;
 }
 .box_text .text_box p {
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 33px;
+  line-height: 36px;
   height: 242px;
   overflow: hidden;
 }
